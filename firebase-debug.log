@@ -1,0 +1,34 @@
+[debug] [2017-11-28T14:58:19.957Z] ----------------------------------------------------------------------
+[debug] [2017-11-28T14:58:19.957Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\oki\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-11-28T14:58:19.957Z] CLI Version:   3.15.3
+[debug] [2017-11-28T14:58:19.957Z] Platform:      win32
+[debug] [2017-11-28T14:58:19.957Z] Node Version:  v8.9.1
+[debug] [2017-11-28T14:58:19.957Z] Time:          Tue Nov 28 2017 15:58:19 GMT+0100 (Romance Standard Time)
+[debug] [2017-11-28T14:58:19.957Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-28T14:58:19.972Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-28T14:58:19.972Z] > authorizing via signed-in user
+[debug] [2017-11-28T14:58:19.972Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/nysl-gameschedule-app  
+ Tue Nov 28 2017 15:58:19 GMT+0100 (Romance Standard Time)
+[debug] [2017-11-28T14:58:20.741Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-28T14:58:20.741Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/nysl-gameschedule-app/tokens  
+ Tue Nov 28 2017 15:58:20 GMT+0100 (Romance Standard Time)
+[debug] [2017-11-28T14:58:21.429Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'nysl-gameschedule-app'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2017-11-28T14:58:22.866Z] >>> HTTP REQUEST PUT https://nysl-gameschedule-app.firebaseio.com/.settings/rules.json?dryRun=true {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ 
+ Tue Nov 28 2017 15:58:22 GMT+0100 (Romance Standard Time)
+[debug] [2017-11-28T14:58:23.554Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database nysl-gameschedule-app is valid
+[info] i  hosting: preparing public directory for upload...
+[debug] [2017-11-28T14:58:23.679Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/nysl-gameschedule-app/uploads/-L-27hQus3J_ROnpU0mZ?fileCount=21&message=  
+ Tue Nov 28 2017 15:58:23 GMT+0100 (Romance Standard Time)

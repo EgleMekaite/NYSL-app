@@ -1,0 +1,65 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <title>Chat Example</title>
+    <meta charset="utf-8">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/example.css">
+
+</head>
+
+<body>
+
+    <button id="login">Sign in with Google</button>
+
+    <button id="logout">Sign Out</button>
+    <div id="signedInAs"></div>
+
+    <div id="emailSignIn">
+        <p>Log in or sign up with your E-mail and password</p>
+        <input type="text" id="email" name="email" placeholder="Email" /> &nbsp;&nbsp;&nbsp;
+        <input type="password" id="password" name="password" placeholder="Password" />
+        <br/><br/>
+        <button id="quickstart-sign-in" name="signin">Sign In</button> &nbsp;&nbsp;&nbsp;
+        <button id="quickstart-sign-up" name="signup">Sign Up</button>
+
+    </div>
+
+    <div id="postsDiv">
+        <input id="body" type="text" placeholder="Your message...">
+        <button id="create-post">Post your message</button>
+
+        <div id="posts">
+            Posts
+        </div>
+
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAhQZoUent3FVrvSGOrSyx1aTwrNz1BRwA",
+            authDomain: "chat-example-62b97.firebaseapp.com",
+            databaseURL: "https://chat-example-62b97.firebaseio.com",
+            projectId: "chat-example-62b97",
+            storageBucket: "chat-example-62b97.appspot.com",
+            messagingSenderId: "86655335631"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="example.js"></script>
+</body>
+
+
+</html>

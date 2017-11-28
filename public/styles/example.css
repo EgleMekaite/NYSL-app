@@ -1,0 +1,22 @@
+#login,
+#create-post, 
+#body {
+    display: block;
+    height: 44px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#posts {
+    font-size: 18px;
+}
+#logout {
+    display: none;
+    height: 44px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#signedInAs,
+#postsDiv {
+    display: none;
+}
